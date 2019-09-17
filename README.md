@@ -37,7 +37,7 @@ The neural network uses a sequential model and has six convolutional layers, fou
 Two features are implemented in training:
 
 * A decaying learning rate.
-* Model checkpoint - saving the model to prevent overfitting after too many epochs.
+* Model checkpoint - saving the model in 'model.h5' to prevent overfitting after too many epochs.
 
 ## Evaluation
 

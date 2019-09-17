@@ -5,6 +5,7 @@ Classifying the [German Traffic Signs Recognition Benchmark dataset](http://benc
 
 ## Requirements
 
+* Python 3.*
 * H5PY
 * Keras
 * NumPy

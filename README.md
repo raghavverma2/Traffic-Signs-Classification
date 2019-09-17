@@ -1,8 +1,11 @@
 # Traffic Signs Classification
 Classifying the [German Traffic Signs Recognition Benchmark dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset) using a convolutional deep neural network in Keras, achieving an accuracy of <b><i>98.79%</b></i>, compared to human accuracy of 98.84% (from <i>[Man vs. Computer: Benchmarking Machine Learning Algorithms for Traffic Sign Recognition](https://www.ini.rub.de/upload/file/1470692859_c57fac98ca9d02ac701c/stallkampetal_gtsrb_nn_si2012.pdf)</i>).
 
+39,209 images are used for training, and 12,360 are used for testing.
+
 ## Requirements
 
+* Python 3.*
 * H5PY
 * Keras
 * NumPy
@@ -34,7 +37,7 @@ The neural network uses a sequential model and has six convolutional layers, fou
 Two features are implemented in training:
 
 * A decaying learning rate.
-* Model checkpoint - saving the model to prevent overfitting after too many epochs.
+* Model checkpoint - saving the model in 'model.h5' to prevent overfitting after too many epochs.
 
 ## Evaluation
 

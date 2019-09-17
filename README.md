@@ -1,5 +1,5 @@
 # Traffic Signs Classification
-Classifying the [German Traffic Signs Recognition Benchmark dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset) using a convolutional deep neural network, achieving an accuracy of <b><i>98.79%</b></i>, compared to human accuracy of 98.84% (from <i>[Man vs. Computer: Benchmarking Machine Learning Algorithms for Traffic Sign Recognition](https://www.ini.rub.de/upload/file/1470692859_c57fac98ca9d02ac701c/stallkampetal_gtsrb_nn_si2012.pdf)</i>).
+Classifying the [German Traffic Signs Recognition Benchmark dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset) using a convolutional deep neural network in Keras, achieving an accuracy of <b><i>98.79%</b></i>, compared to human accuracy of 98.84% (from <i>[Man vs. Computer: Benchmarking Machine Learning Algorithms for Traffic Sign Recognition](https://www.ini.rub.de/upload/file/1470692859_c57fac98ca9d02ac701c/stallkampetal_gtsrb_nn_si2012.pdf)</i>).
 
 ## Requirements
 
@@ -27,4 +27,12 @@ The is some variance in the number of samples between classes, so the images are
 3. Shearing, and
 4. Zooming in and out of the images.
 
-## Constructing model
+## Model
+
+The neural network uses a sequential model and has six convolutional layers, four dropout layers for regularization and preventing overfitting, and a flattened fully connected hidden layer.
+
+Two features are implemented in training the model:
+
+* A decaying learning rate.
+* Model checkpoint - saving the model to prevent overfitting after too many epochs.
+

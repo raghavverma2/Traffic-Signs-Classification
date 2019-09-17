@@ -38,4 +38,4 @@ Two features are implemented in training:
 
 ## Evaluation
 
-The model achieved 98.79% accuracy after 35 epochs, about 10 seconds for each epoch on an AWS EC2 p2.xlarge instance.
+The model achieved 98.79% accuracy after 35 epochs and a batch size of 32, about 10 seconds for each epoch on an AWS EC2 p2.xlarge instance.

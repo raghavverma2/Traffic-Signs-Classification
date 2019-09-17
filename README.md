@@ -3,7 +3,7 @@ Classifying the [German Traffic Signs Recognition Benchmark dataset](http://benc
 
 ## Preprocessing
 
-The pictures from the dataset vary in illumination, so the images are preprocessed using histogram equalization to yellow in HSV. The images also vary in size, so they are resized to be 48 x 48 x 3. Cropping to the center, and rolling the RGB axis to 0 is performed.
+The pictures from the dataset vary in illumination, so the images are preprocessed using histogram equalization to yellow in HSV and the RGB axis is rolled to 0. The images also vary in size, so they are resized to be 48 x 48 x 3 and cropped to the center. The are also converted to numpy arrays, associated with labels, and one-hot encoded.
 
 The is some variance in the number of samples between classes, so the images are augmented to increase the size of the dataset. This is done by...
 

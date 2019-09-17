@@ -31,8 +31,11 @@ The is some variance in the number of samples between classes, so the images are
 
 The neural network uses a sequential model and has six convolutional layers, four dropout layers for regularization and preventing overfitting, and a flattened fully connected hidden layer.
 
-Two features are implemented in training the model:
+Two features are implemented in training:
 
 * A decaying learning rate.
 * Model checkpoint - saving the model to prevent overfitting after too many epochs.
 
+## Evaluation
+
+The model achieved 98.79% accuracy after 35 epochs, about 10 seconds for each epoch on an AWS EC2 p2.xlarge instance.

@@ -143,7 +143,7 @@ model.compile(loss = 'categorical_crossentropy',
                             nesterov = True),
               metrics = ['accuracy'])
 
-epochs = 10
+epochs = 30
 bs = 32
 
 model.fit_generator(datagen.flow(X_train, Y_train, batch_size = bs),
